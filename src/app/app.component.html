@@ -1,20 +1,103 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container app">
+    <div class="row">
+    <div class="col-sm-8"><h1 class="text-center"> Angular Crud <small>Angular 4, Bootstrap</small> </h1></div>
+        <div class="col-sm-4">
+          <div class="alert alert-success alert-dismissible">
+          <a href="#" class="close"> &times;</a>
+          Diseñado por Camilo lópez
+           </div>
+        </div>
+    </div>
+<div class="row">
+  <div class="col-sm-5">
+    <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
+  </div>
 
+  <div class="col-sm-7">
+    <h2>ingresar usuario: </h2>
+    <form class="from-horizontal">
+        <div class="form-group">
+          <label for="name" class="control-label col-sm-2">Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="position" class="control-label col-sm-2">position</label>
+          <input type="text" class="form-control" id="position" name="position" [(ngModel)]="model.position" placeholder="Position">
+        </div>
+        <div class="form-group">
+          <label for="email" class="control-label col-sm-2">Email</label>
+          <input type="text" class="form-control" id="position" name="email" [(ngModel)]="model.email" placeholder="Correo electrónico">
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+              <button type="submit" class="btn btn-success" (click)="addEmployee()">Enviar</button>
+
+          </div>
+        </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+    <h2>Leer datos:</h2>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Cargo</th>
+            <th>Email</th>
+            <th>Acción</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; let i = index">
+              <td>{{employee.name}}</td>
+              <td>{{employee.position}}</td>
+              <td>{{employee.email}}</td>
+              <td>
+                <a (click) = "editEmployee(i)" class="btn btn-success">Editar</a>
+                <a (click) = "deleteEmployee(i)" class="btn btn-danger">Eliminar</a>
+              </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+<!-- despues -->
+<div class="col-sm-4">
+  <h2>Editar: </h2>
+  <form class="from-horizontal">
+      <div class="form-group">
+        <label for="name" class="control-label col-sm-2">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model2.name" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="position" class="control-label col-sm-2">Cargo</label>
+        <input type="text" class="form-control" id="position" name="position" [(ngModel)]="model2.position" placeholder="Cargo de la persona">
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-2">Email</label>
+        <input type="text" class="form-control" id="position" name="email" [(ngModel)]="model2.email" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-success" (click)="updateEmployee()">Enviar</button>
+
+        </div>
+      </div>
+
+  </form>
+</div>
+
+<!-- ates -->
+
+
+</div>
+
+
+
+
+</div>
